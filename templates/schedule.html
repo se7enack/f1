@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 2026 Schedule</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1></h1>Formula 1 - 2026 Season</h1>
+
+<div class="grid">
+  {% for race in races %}
+  <div class="card">
+    <div class="round">Round {{ race.round }}</div>
+    <h2>{{ race.name }}</h2>
+    <p class="dates">{{ race.start }} --> {{ race.end }}</p>
+    <p class="location">{{ race.location }}, {{ race.country }}</p>
+    <p class="circuit">{{ race.circuit }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+</body>
+</html>

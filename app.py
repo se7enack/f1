@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from f1_schedule import get_f1_schedule #nat, this is the local file in this dir (f1_schedule.py)
+from f1_schedule import get_f1_schedule #nate, this is the local file in this dir (f1_schedule.py)
 app = Flask(__name__)
 
 @app.route("/")
